@@ -9,7 +9,8 @@ import { TodoItem, type ITodoItem } from './TodoItem';
 import type { Theme } from './styled';
 import { useAppTodo, useUpdateTitle } from './useAppTodo';
 import { TodoListContext } from './context';
-import { QUERY_CLIENT } from './provider/query-client'; 
+import { QUERY_CLIENT } from './provider/query-client';
+import { SignIn } from './SignIn/SignIn';
 
 // import { Button, TextInput } from "./atoms";
 //  import { Button } from "./atoms/Button";
@@ -69,6 +70,7 @@ export function App() {
 
 
             <div id="title">Hello World</div>
+            <SignIn />
             <section id="center">
               <AddTodo />
             </section>
